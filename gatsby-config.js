@@ -1,6 +1,6 @@
-require(`dotenv`).config()
+require(`dotenv`).config();
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
@@ -29,7 +29,7 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
+            title: `News`,
             slug: `/blog`,
           },
           {
@@ -37,18 +37,9 @@ module.exports = {
             slug: `/about`,
           },
         ],
-        externalLinks: [
-          {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
-          },
-        ],
+        externalLinks: [],
       },
-    },
+    }, 
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
